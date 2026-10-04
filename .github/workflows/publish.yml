@@ -1,7 +1,7 @@
 name: publish
 # Publishes to PyPI when you create a GitHub Release. Uses PyPI "trusted publishing", so no API token is stored.
 # One-time setup on pypi.org: Your projects -> Publishing -> add a pending publisher
-#   owner JackSessions, repository manifest-trace, workflow publish.yml, environment pypi.
+#   owner JackSessions, repository manifest-trace-, workflow publish.yml, environment pypi.
 on:
   release:
     types: [published]

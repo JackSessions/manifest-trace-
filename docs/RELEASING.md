@@ -2,11 +2,11 @@
 
 One-time setup (about 5 minutes):
 
-1. Push `main` to `github.com/JackSessions/manifest-trace`.
+1. Push `main` to `github.com/JackSessions/manifest-trace-`.
 2. On https://pypi.org, log in, then Your account > Publishing > Add a new pending publisher. Type these by hand rather than pasting, so no hidden character sneaks in:
    - PyPI project name: `manifest-trace`
    - Owner: `JackSessions`
-   - Repository name: `manifest-trace`
+   - Repository name: `manifest-trace-`
    - Workflow name: `publish.yml`
    - Environment name: `pypi`
 3. On GitHub: Settings > Environments > New environment, name it `pypi` (optionally require your approval before each publish).
