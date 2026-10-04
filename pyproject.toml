@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manifest-trace"
+version = "0.1.0"
+description = "Android manifest exposure scanner: finds exported components, allowBackup, debuggable and cleartext issues across a batch of APKs"
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.9"
+authors = [{ name = "Jack Sessions" }]
+keywords = ["android", "apk", "manifest", "mobile-security", "vulnerability-research", "static-analysis", "dfir", "cve"]
+license = "MIT"
+license-files = ["LICENSE"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Information Technology",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://github.com/JackSessions/manifest-trace"
+Source = "https://github.com/JackSessions/manifest-trace"
+Issues = "https://github.com/JackSessions/manifest-trace/issues"
+Changelog = "https://github.com/JackSessions/manifest-trace/blob/main/CHANGELOG.md"
+
+[project.scripts]
+manifest-trace = "manifesttrace.cli:main"
+
+[tool.setuptools]
+packages = ["manifesttrace"]
